@@ -1,0 +1,22 @@
+button.btn {
+  margin: 5px;
+}
+.vertical-center {
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.jumbotron {
+  margin-bottom: 0;
+  background-color: black;
+}
+.container{
+  background-color: white;
+  max-width: 500px;
+  padding: 50px;
+}
+
+.badge{
+  margin-left: 2px;
+}

@@ -1,0 +1,20 @@
+<div class="text-center">
+  <div class="buttons">
+    <button class="btn btn-primary" (click)="generateNumber()">Generate</button>
+    <button class="btn btn-primary" (click)="sumNumbers()">Sum numbers</button>
+    <button class="btn btn-primary" (click)="clearNumbers()">Clear</button>
+  </div>
+
+  <div>
+    <span *ngFor="let num of numbers" class="badge badge-pill badge-secondary">
+      {{num}}
+    </span>
+  </div>
+
+  <div>
+    <span>Count: {{numbers?.length}}</span>
+  </div>
+  <div>
+    <span>Sum: {{sum || 'not summed'}}</span>
+  </div>
+</div>
