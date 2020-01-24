@@ -29,7 +29,7 @@ export class HomeComponent {
     }, error => console.error(error));
   }
 
-  private clearNumbers() {
+  public clearNumbers() {
     this.http.get<number[]>(this.baseUrl + 'api/Numbers/ClearNumbers').subscribe(result => {
       this.numbers = [];
       this.sum = null;
@@ -37,7 +37,7 @@ export class HomeComponent {
     }, error => console.error(error));
   }
 
-  private sumNumbers() {
+  public sumNumbers() {
     this.http.get<number>(this.baseUrl + 'api/Numbers/GetSum').subscribe(result => {
       this.sum = result;
     }, error => console.error(error));

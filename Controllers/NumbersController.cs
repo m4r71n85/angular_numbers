@@ -10,9 +10,9 @@ namespace numbers.Controllers
     [Route("api/[controller]")]
     public class NumbersController : Controller
     {
-        private readonly NumbersRepository numbersRepository;
+        private readonly INumbersRepository numbersRepository;
 
-        public NumbersController(NumbersRepository numbersRepository)
+        public NumbersController(INumbersRepository numbersRepository)
         {
             this.numbersRepository = numbersRepository;
         }
